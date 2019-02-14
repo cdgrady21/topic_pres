@@ -1,0 +1,49 @@
+---
+title: 'Field Experiments'
+author:
+- affiliation: <cdgrady2@illinois.edu>,  University of Illinois at Urbana-Champaign,
+    Department of Political Science.
+  name: Chris Grady
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  beamer_presentation:
+    template: ../bowerstemplate.beamer
+    toc: yes
+  ioslides_presentation: default
+bibliography: ../cdg_references.bib
+---
+
+```{r include=FALSE, cache=FALSE, eval=F}
+require(knitr)
+opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="tiny",    # slightly smaller font for code
+  echo=TRUE,
+  results='markup',
+  strip.white=TRUE,
+  fig.path='figs/fig',
+  cache=FALSE,
+  highlight=TRUE,
+  width.cutoff=132,
+  out.width='.9\\textwidth',
+  fig.retina=FALSE,
+  message=FALSE,
+  comment=NA)
+```
+
+# Roadmap
+
+- Implementation Partners
+  - How to talk to them
+  - How to pitch yourself to them
+  - Their incentives
+- Research Partners
+  - 
+- Designing an Intervention
+  - Feasibility
+- Randomization and backup plans
+- Data collection methods
+- Being in Charge
+
+
+
