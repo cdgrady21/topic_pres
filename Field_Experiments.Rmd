@@ -7,11 +7,11 @@ author:
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output:
   beamer_presentation:
-    template: ../bowerstemplate.beamer
+    template: ../utils/bowerstemplate.beamer
     toc: yes
   ioslides_presentation: default
   slidy_presentation: default
-bibliography: ../cdg_references.bib
+bibliography: ../utils/cdg_references.bib
 ---
 
 ```{r include=FALSE, cache=FALSE, eval=F}
@@ -34,92 +34,149 @@ opts_chunk$set(
 
 # Roadmap
 
+- What is a field experiment?
 - Implementation Partners
 - Being in the Field
-- Intervention
-  - Design (or not)
-  - Feasibility
+- Intervention and Evaluation
+  - Data collection methods
+- Running the Show
 
-- Designing an Evaluation
-  - Randomization and backup plans
-  - Feasibility
-- Data collection methods
-- Being in the field
-- Running the show
-- Priorities
 
-Do you really want to do an RCT?
+
+# What is a field experiment?
+
+- An experiment done outside of a lab, with real people who don't know they are part of an experiment
+  - Lab: show people video, survey those people
+  - Field: Show a video in a local theatre; survey people who attended
+- Researchers assign and administer experimental intervention
+
+\smallskip
+
+- Different than natural/quasi-experiment where intervention is incidentally random or as-if random <!--You don't administer anything or make sure randomization is being done correctly in one of these. -->
 
 
 # Implementation Partners
 
-- How to get involved with implementers
-    - professor throws you a project
-    \pause
+How to get involved with implementers
+
+    - Professor throws you a project
     - Meet at a conference
-    \pause
-    - pro bono "cold call" from you
-    - research4impact, egap, other sites that connect researchers with implementers
-    - bigger NGOs will want established professors.  Smaller groups will take you.
+    - Pro bono "cold call" from you
+    - Sites that connect researchers and implementers: research4impact, egap, others
+
+- Implementers want prior RCT experience, experience in-country
+- Bigger NGOs will want established professors
 
 # Implementation Partners
 
-- How to work with non-academics
-    - Academics and practitioners have very different skillsets <!--We know things they don't, they know things we don't -->
-    - Don't make them feel stupid
-    - often not as well trained methodologically
-    - great real life experience
+How to work with non-academics
 
-
+    - Theoretical vs. practical divide <!--Works on paper, not in real life.  Figure out what really matters about the theory and how to put the theory into practice -->
+    - Compromise away from perfection
+    - Avoid jargon
+    - Explain how long data work can take <!--They will have no idea -->
+    - Expect Googledocs
+    
 # Implementation partners
 
-- Priorities and incentives
-    - Implementing organizations will want you to do a lot of work that is irrelevant for you and want to make themselves look good
+Priorities and incentives
 
-# Implementing Partners
-
-- Collaborating
-    - They will use Word and Googledocs
-    - They will think the stuff we talk about is needlessly esoteric
-    - They will think the way we write is needlessly complicated
+    - Implementing organizations will want you to do a lot of work that is irrelevant for you
+    - Look our for your own interests
+    - Implementers _need_ to make themselves look good to maintain grant funding
 
 # Being in the Field
 
-- Do you need to go?  \pause Yes.
-- Or you need to pay a really good partner and communicate daily
-- Be flexible where things are not imperative
-- Be firm where things are necessary <!--"Chris isn't being unreasonable.  I talked to some people and they said it isn't an experiment if you don't have randomization and a control group." -->
+- You need to go <!--or you need to pay a really good partner and communicate daily-->
+- You want to go <!--You will get to go to wondrous places few people ever see -->
+- Establish personal relationships or you will be in the dark and nothing will get done
+- Bring gifts that are identifiably _American_
+
+\smallskip
+
+- Implementer priority is for a successful project, not to evaluate if the project was successful.
 
 \note{
 
 You need to be involved with the intervention, not lead it from afar.
 
-Otherwise you'll find otu 6 months later that they did not like the randomization and so didn't use it.  Or that they started the intervention before the baseline survey because they didn't want to wait.  Or that a control site and treatment site are less than 1 mile apart.  Or that they changed the intervention and it's totally different now (NGOs are _always_ adapting).
-
-Their incentive is to have things go well, not to evaluate if their programs work.
+Otherwise you'll find out 6 months later that they did not like the randomization and so didn't use it.  Or that they started the intervention before the baseline survey because they didn't want to wait.  Or that a control site and treatment site are less than 1 mile apart.  Or that they changed the intervention and it's totally different now (NGOs are _always_ adapting).
 
 }
 
 # Being in the Field
 
-- Enjoy it
-- Learn the language actively
+- Learn the language actively <!--With a little effort, can say every simple thing in local language within 1 month. -->
+    - Be comfortable with no English unless people are speaking to you
+- Learn and follow cultural etiquette <!--Normally very easy, about being respectful.  But don't compromise yourself; stop if you feel uncomfortable.-->
+- Calm yourself when you want to start an argument <!--Story about going to Mustafa's and his wife not eating with us, I thought it was disrespectful towards women but she would have been very uncomfortable eating with us.  Isaac and non-alcoholic wine. -->
 
-# Interventions
+\medskip
 
-- You need to be flexible
-- Field experiemnts are a mess
+- Start slow and increase intake of local food each day
+- Learn what you can and cannot get in-country <!--Contact solution, good coffee are rare. -->
+- Get a local phone and simcard
+- Get personal wifi connection
 
-# Evaluations
 
-- Randomization
-- Feasibility
+# Being in the Field
+
+- Learn to get around without help
+- Find amenities and activities -- gyms, basketball/soccer club, local bars
+- Travel when possible -- do **not** watch TV in a hotel room
+- Hang out with locals
+- Bring books to read
+
+\medskip
+
+- Enjoy it!  Make friends!
+
+# Interventions and Evaluations
+
+- Don't let the tail wag the dog -- don't change the intervention so that it can be evaluated more easily
+- Make implementers part of design discussions so it is a _team_ design, not _your_ design
+- Be flexible where things are not imperative
+- Be firm where things are necessary <!--"Chris isn't being unreasonable.  I talked to some people and they said it isn't an experiment if you don't have randomization and a control group." -->
+
+
+# Interventions and Evaluations
+
+- Field experiments are a mess -- multiple things will go wrong
+- Randomization at multiple levels
+- Simple designs are more likely to be implemented faithfully; complex designs are beautiful and fragile
+- Feasibility extends to survey questions and implementation, observational monitoring procedures, everything
+  - Survey experiments are hard on enumerators because the question wording changes every interview
+
+\smallskip
+
+- To NGOs, two-arm RCTs are already complicated.  
+- Difficult to pitch more complicated things, like multi-arm designs, saturation designs, etc...
+
+# Interventions and Evaluations
+
+- Everything is clustered
+- Everything spills over
+
+\bigskip
+
+- Get the Gerber and Green book.
+
 
 # Data Collection Methods
 
-## Surveys
+- Surveys <!--Lots of tablet survey applications, should learn to code yourself -->
+    - In person
+    - Mobile phone "IVR" surveys
+- Observational measures
+- Naturalistic behavioral games
+- Focus groups and "Key Informant" interviews
+- Others?
 
+\note{
 - Questions in one context make no sense in another context
+- Yes/No + how strongly do you feel > likert scales.
+- Huge agreement bias.
+
 
 Would you be comfortable with someone from the same religion but a different denomination marrying into your family?
 Would you be comfortable with someone from a different religion marrying into your family?
@@ -129,37 +186,47 @@ Would you accept someone from a different religion seeking marriage with one of 
 
 Would you marry someone you loved, even if they practiced a different religion? - 50% yes, 50% no.
 
-# Surveys
 
 There is more than one valid interpretation of religious teachings.
 
 An Arabic word Bid'ah means innovation, connotation heretical teachings.  Innovations -- unorthodox interpretations of Koranic teachings -- are often blamed for violence in NE Nigeria.  So lots of tolerant people said no.
 
-# Surveys
-
 A woman should have a say in how her household spends money.  
 
-## Surveys
-
-Yes/No + how strongly do you feel, vs scales.
-
-Huge agreement bias.
+}
 
 
-## Observational Measures
+# Running the Show
 
-- Do you have access to the populations under study?
-
-## Naturalistic Behavioral Games
-
-- Create a situation in which subjects have to make behavioral game choices
-
-# Running The Show
-
-- putting your money into it
+- You are in charge and there is no reset button or second chance
+- Putting your money into it
 - staying up until 3am every night for two weeks
 - Hard deadlines
+
+# Running the Show
+
 - Lead by example: get sweaty
 
 - Be SUPER ORGANIZED
+
+
+# Conclusion
+
+- Field experiments are great opportunities for researchers
+- Working with implementation partners can be difficult but rewarding
+- Enjoy experiencing another country
+- Keep your designs simple
+- Use multiple methods of data collection
+- Lead by example
+
+# Conclusion
+
+- Do you really want to do a field experiment/RCT?
+
+\medskip
+
+- Take a lot of time
+- Require a lot of non-academic work
+- High fail rate
+
 
