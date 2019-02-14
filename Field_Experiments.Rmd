@@ -1,5 +1,5 @@
 ---
-title: 'Field Experiments'
+title: "Field Experiments"
 author:
 - affiliation: <cdgrady2@illinois.edu>,  University of Illinois at Urbana-Champaign,
     Department of Political Science.
@@ -10,6 +10,7 @@ output:
     template: ../bowerstemplate.beamer
     toc: yes
   ioslides_presentation: default
+  slidy_presentation: default
 bibliography: ../cdg_references.bib
 ---
 
@@ -34,16 +35,131 @@ opts_chunk$set(
 # Roadmap
 
 - Implementation Partners
-  - How to talk to them
-  - How to pitch yourself to them
-  - Their incentives
-- Research Partners
-  - 
-- Designing an Intervention
+- Being in the Field
+- Intervention
+  - Design (or not)
   - Feasibility
-- Randomization and backup plans
+
+- Designing an Evaluation
+  - Randomization and backup plans
+  - Feasibility
 - Data collection methods
-- Being in Charge
+- Being in the field
+- Running the show
+- Priorities
+
+Do you really want to do an RCT?
 
 
+# Implementation Partners
+
+- How to get involved with implementers
+    - professor throws you a project
+    \pause
+    - Meet at a conference
+    \pause
+    - pro bono "cold call" from you
+    - research4impact, egap, other sites that connect researchers with implementers
+    - bigger NGOs will want established professors.  Smaller groups will take you.
+
+# Implementation Partners
+
+- How to work with non-academics
+    - Academics and practitioners have very different skillsets <!--We know things they don't, they know things we don't -->
+    - Don't make them feel stupid
+    - often not as well trained methodologically
+    - great real life experience
+
+
+# Implementation partners
+
+- Priorities and incentives
+    - Implementing organizations will want you to do a lot of work that is irrelevant for you and want to make themselves look good
+
+# Implementing Partners
+
+- Collaborating
+    - They will use Word and Googledocs
+    - They will think the stuff we talk about is needlessly esoteric
+    - They will think the way we write is needlessly complicated
+
+# Being in the Field
+
+- Do you need to go?  \pause Yes.
+- Or you need to pay a really good partner and communicate daily
+- Be flexible where things are not imperative
+- Be firm where things are necessary <!--"Chris isn't being unreasonable.  I talked to some people and they said it isn't an experiment if you don't have randomization and a control group." -->
+
+\note{
+
+You need to be involved with the intervention, not lead it from afar.
+
+Otherwise you'll find otu 6 months later that they did not like the randomization and so didn't use it.  Or that they started the intervention before the baseline survey because they didn't want to wait.  Or that a control site and treatment site are less than 1 mile apart.  Or that they changed the intervention and it's totally different now (NGOs are _always_ adapting).
+
+Their incentive is to have things go well, not to evaluate if their programs work.
+
+}
+
+# Being in the Field
+
+- Enjoy it
+- Learn the language actively
+
+# Interventions
+
+- You need to be flexible
+- Field experiemnts are a mess
+
+# Evaluations
+
+- Randomization
+- Feasibility
+
+# Data Collection Methods
+
+## Surveys
+
+- Questions in one context make no sense in another context
+
+Would you be comfortable with someone from the same religion but a different denomination marrying into your family?
+Would you be comfortable with someone from a different religion marrying into your family?
+
+Would you accept someone from a different religion seeking your hand in marriage without converting? - 85% no
+Would you accept someone from a different religion seeking marriage with one of your family members without converting? - 85% no
+
+Would you marry someone you loved, even if they practiced a different religion? - 50% yes, 50% no.
+
+# Surveys
+
+There is more than one valid interpretation of religious teachings.
+
+An Arabic word Bid'ah means innovation, connotation heretical teachings.  Innovations -- unorthodox interpretations of Koranic teachings -- are often blamed for violence in NE Nigeria.  So lots of tolerant people said no.
+
+# Surveys
+
+A woman should have a say in how her household spends money.  
+
+## Surveys
+
+Yes/No + how strongly do you feel, vs scales.
+
+Huge agreement bias.
+
+
+## Observational Measures
+
+- Do you have access to the populations under study?
+
+## Naturalistic Behavioral Games
+
+- Create a situation in which subjects have to make behavioral game choices
+
+# Running The Show
+
+- putting your money into it
+- staying up until 3am every night for two weeks
+- Hard deadlines
+- Lead by example: get sweaty
+
+- Be SUPER ORGANIZED
 
