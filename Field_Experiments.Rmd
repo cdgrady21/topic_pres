@@ -59,10 +59,11 @@ opts_chunk$set(
 
 How to get involved with implementers
 
-    - Professor throws you a project
-    - Meet at a conference
-    - Pro bono "cold call" from you
-    - Sites that connect researchers and implementers: research4impact, egap, others
+  - Professor throws you a project
+  - Meet at a conference
+  - Pro bono "cold call" from you
+  - University collaborations
+  - Sites that connect researchers and implementers: research4impact, egap, others
 
 - Implementers want prior RCT experience, experience in-country
 - Bigger NGOs will want established professors
@@ -71,19 +72,19 @@ How to get involved with implementers
 
 How to work with non-academics
 
-    - Theoretical vs. practical divide <!--Works on paper, not in real life.  Figure out what really matters about the theory and how to put the theory into practice -->
-    - Compromise away from perfection
-    - Avoid jargon
-    - Explain how long data work can take <!--They will have no idea -->
-    - Expect Googledocs
+  - Theoretical vs. practical divide <!--Works on paper, not in real life.  Figure out what really matters about the theory and how to put the theory into practice -->
+  - Compromise away from perfection
+  - Avoid jargon
+  - Explain how long data work can take <!--They will have no idea -->
+  - Expect Googledocs
     
 # Implementation partners
 
 Priorities and incentives
 
-    - Implementing organizations will want you to do a lot of work that is irrelevant for you
-    - Look our for your own interests
-    - Implementers _need_ to make themselves look good to maintain grant funding
+  - Implementing organizations will want you to do a lot of work that is irrelevant for you
+  - Look our for your own interests
+  - Implementers _need_ to make themselves look good to maintain grant funding
 
 # Being in the Field
 
@@ -200,13 +201,13 @@ A woman should have a say in how her household spends money.
 
 - You are in charge and there is no reset button or second chance
 - Putting your money into it
-- staying up until 3am every night for two weeks
+- Staying up until 3am every night for two weeks
 - Hard deadlines
 
 # Running the Show
 
-- Lead by example: get sweaty
-
+- Lead by example: get sweaty, get cold, get uncomfortable
+- Don't ask others to do what you will now
 - Be SUPER ORGANIZED
 
 

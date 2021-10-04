@@ -1,0 +1,207 @@
+---
+title: "Why Political Science"
+author: "Christopher D. Grady"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Overview
+
+- Common jobs for political scientists
+
+\bigskip
+
+- Why people hire PS students
+
+# Jobs
+
+- Academic <!--teaching and research-->
+- Nonprofit 
+- Private Sector
+- Government 
+
+
+# Academic Jobs
+
+- Research
+- Teaching
+
+\smallskip
+
+- National politics
+- World/Comparative politics
+- International relations
+
+
+
+# Nonprofit Jobs
+
+- NGOs: Red Cross, Mercy Corps, Gates Foundation
+- IGOs: UN, UNESCO, UNICEF
+- CSOs
+
+\smallskip
+
+- Program officer/manager
+- Program director
+- Researcher/ "Monitoring and Evaluation"
+
+# Private Sector Jobs
+
+- Policy analysis: determining the consequences of government policies. <!--Want to know how policies will affect profits. Get paid -->
+- Research <!--Academic research, but usually less mathematically rigorous and more for public consumption. -->
+- Surveys: design, sampling, enumeration, analysis
+
+
+# Government Jobs
+
+- Bureaucratic/Technocratic <!--city administrator, government ministry -->
+- Policy design
+- Policy implementation
+
+\smallskip
+
+- Campaign consultant
+- Public relations manager
+
+
+# Why do people hire political scientists?
+
+- Reading/writing skills
+- Verbal communication
+- **Identifying cause and effect**
+- **Quantitative analysis** in Python, R, Stata, SAS, SPSS etc...
+
+\medskip
+
+- The future of social sciences, including political science, is quantitative analysis.
+
+# Why do people hire political scientists?
+
+- PS students are good at:
+    - determining if $X$ affects $Y$, and _how_ $X$ affects $Y$
+    - Analyzing data about $X$ and $Y$
+
+# Cause and Effect
+
+Lots of organizations are doing things ($X$) and want to know if those things work
+
+- First need to think about what X would affect
+- Then need to think about how to determine if X affects those things
+- Then need to analyze data
+
+\smallskip
+
+- _Example_: Government passes new housing policy and real estate firm wants to know how it will affect profits.
+- _Example_: City providing new services to citizens and wants to know if more people pay taxes
+
+# Discussion
+
+# Discussion
+
+How can a government encourage people to pay their taxes?
+
+\pause
+
+<!-- This requires answering several other questions. -->
+
+- Why do people pay taxes?
+
+\pause
+
+- Why do people _not_ pay taxes?
+
+\pause
+
+- What are the barriers to tax payment?  What prevents people from paying taxes? <!--Sometimes changing the wording can change the answers. -->
+
+\note{
+
+want some benefit, like paved roads, waste collection, healthcare
+afraid of being punished by authorities
+afraid of being judged by peers
+A sense of civic duty
+because everyone else is doing it
+
+
+money is getting stolen instead of used on services
+because no one else is doing it
+because they don't know that they should!
+because they do not have enough money
+because they do not know how
+because it is inconvenient/time-consuming
+because they do not know 
+}
+
+# Discussion
+
+## Hypothetical
+
+- Let's say the government increases service delivery with the goal of increasing tax payment
+
+- How would you determine if a policy increased tax payment of citizens?
+
+# Discussion
+
+How would you determine if a policy increased tax payment of citizens?
+
+- Theorize: Use logical reasoning to assess if a policy will work
+
+    - Example: Government increases service delivery
+    
+    \pause
+    
+    - People might pay because they want the service
+    
+    \medskip
+    
+    - But what if I don't pay but everyone else pays?  Still receive service.
+    - What if I pay and no one else pays?  No service.
+
+\note{
+
+Modern _formal theory_/game theory requires mathematical analysis.  Prisoner's Dilemma.  Collective Action Problem.
+}
+
+
+
+<!-- Can anyone see any problems with this?  Our thinking can be wrong; we may not see this in the world.-->
+
+# Discussion
+
+How would you determine if a policy increased tax payment of citizens?
+
+- Correlations in the world: do people who receive more services pay their taxes? <!--Can anyone see any problems with this? Reverse causation: people who pay taxes receive more services.-->
+
+\pause
+
+- But could be that people who pay taxes receive services, not that people who receive services pay taxes.
+
+
+# Discussion
+
+How would you determine if a policy increased tax payment of citizens?
+
+- Experiments: Provide people with more services and see if they pay taxes
+
+# Discussion
+
+- PS students are prepared to answer questions like our example
+- Answering those questions requires thought about cause ans effect
+- Answering those questions requires quantitative analysis
+
+# Conclusion
+
+- Think about cause and effect broadly
+- Get good quantitative/statistical skills
+- Look for jobs in academia, nonprofits, and governments
+- Look for quantitative analysis jobs in private sector
+ 
+
+# Questions
+
+Ask!
