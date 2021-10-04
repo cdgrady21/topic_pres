@@ -1,0 +1,565 @@
+\documentclass[11pt,ignorenonframetext,xcolor={svgnames}]{beamer}
+%\setbeameroption{hide notes}
+\usepackage{etex}
+\reserveinserts{28}
+\usepackage{presentation}
+\usepackage{notation}
+\usepackage{caption}
+\usepackage{amssymb,amsmath}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+%\usepackage{lmodern}
+%\usepackage{fontspec,xltxtra,xunicode}
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%\setmainfont{Lato}
+%\setmonofont[Scale=MatchLowercase]{Source Code Pro Light}
+%\let\sfdefault\rmdefault
+\newcommand{\euro}{€}
+\captionsetup{labelformat=empty,labelsep=none,font=small,skip=.25ex} %No "Figure" labels
+\usecolortheme{default}
+\useinnertheme{default}
+\usefonttheme{default}
+%\useoutertheme{progressbar}
+\usepackage{beamerouterthemeprogressbar}
+\progressbaroptions{titlepage=normal,headline=normal,frametitle=normal}
+
+
+% Define Colors
+%% Dark Yellow: 102, 83, 30
+%% Dark Orange: 104, 55, 34
+%% Dark Red: 107, 36, 31
+%% Dark Blue: 19, 64, 80
+%% Dark Green: 0, 86, 79
+%% yellow:  R=242 G=196 B=70 F2C446
+%% orange:  R=249 G=131 B=74 F9834A
+%% blue:  R=46 G=154 B=196   2E9AC4
+%% red:  R=250 G=86 B=70 FA5646
+%% green:  R=3 G=202 B=185 03CAB9
+%% grey:  R=153 G=153 B=153 999999
+%% Dark Yellow: 102, 83, 30
+
+\definecolor{darkyellow}{rgb}{102,83,30}
+\definecolor{orange}{HTML}{F9834A}
+\definecolor{yellow}{HTML}{F2C446}
+\definecolor{blue}{HTML}{2E9AC4}
+\definecolor{darkblue}{rgb}{19,64,80}
+\definecolor{green}{HTML}{03CAB9}
+\definecolor{grey}{HTML}{999999}
+%\definecolor{progressbar@bgblue}{rgb}{0.92, 0.93, 0.95}
+
+%\setbeamerfont*{frametitle}{size=\small,series=\bfseries,bg=white,fg=black}
+%\setbeamerfont*{frametitle}{size=\small,series=\bfseries,bg=white,fg=progressbar@bgblue!90!progressbar@fgblue}
+\setbeamerfont*{note page}{size=\scriptsize}%%footnotesize}
+\setbeamertemplate{note page}[compress]
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{items}[circle]
+\setbeamertemplate{sections/subsections in toc}[circle]
+\setbeamersize{description width=2ex}
+% \setbeamersize{text margin left=1ex,text margin right=1ex}
+\setbeamersize{text margin left=2ex,text margin right=1ex}
+%%\setbeamersize{ParSkip 1ex plus 1pt minus 1pt}
+%% %% %% \setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{:}
+\setbeamercolor{title}{fg=blue}
+\setbeamercolor{author}{fg=grey}
+\setbeamercolor{date}{fg=grey}
+\setbeamerfont{author}{shape=\itshape}
+\setbeamercolor{frametitle}{fg=blue}
+\setbeamercolor{caption name}{fg=normal text.fg}
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\setbeamerfont{quote}{shape=\upshape}
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+
+
+\usepackage{fancyvrb}
+
+
+\usepackage{url}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+%% \AtBeginPart{
+%%   \let\insertpartnumber\relax
+%%     \let\partname\relax
+%%     \frame{\partpage}
+%% }
+
+\AtBeginSection{
+   \let\insertsectionnumber\relax
+      \let\sectionname\relax
+  {
+    \setbeamercolor{background canvas}{bg=blue}
+    %\setbeamercolor{frametitle}{fg=white,bg=darkblue}
+    %\setbeamercolor{normal text}{fg=white,bg=darkblue}
+    %\setbeamercolor{structure}{fg=white}
+       \begin{frame}
+    %\frametitle{\sectionpage}
+    \tableofcontents[currentsection]
+      \end{frame}
+  }
+}
+
+%%% \AtBeginSubsection{
+%%%   \let\insertsubsectionnumber\relax
+%%%     \let\subsectionname\relax
+%%%     \frame{\subsectionpage}
+%%% }
+%%%
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+\setcounter{secnumdepth}{0}
+
+
+
+
+\title[]{Fieldwork and Field Experiments}
+
+
+\author{
+Chris
+Grady\thanks{\href{mailto:cdgrady21@gmail.com}{\nolinkurl{cdgrady21@gmail.com}},
+Senior Metrics Advisor, United States Agency for International
+Development.} \quad
+}
+
+%%\author{true}
+%
+\date{October 04, 2021}
+
+\graphicspath{{.}{../}} 
+
+%% \addtobeamertemplate{frametitle}{}{%
+%% \begin{tikzpicture}[remember picture,overlay]
+%% \node[anchor=south east,yshift=6pt,xshift=-3pt] at (current page.south east) {\includegraphics[height=0.5cm]{SBSTLightBulb}};
+%% \end{tikzpicture}}
+%% 
+%% \addtobeamertemplate{title page}{}{%
+%% \begin{tikzpicture}[remember picture,overlay]
+%% \node[anchor=south east,yshift=5pt] at (current page.south east) {\includegraphics[height=2cm]{SBSTLogo}};
+%% \end{tikzpicture}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+\begin{frame}[plain,label=intro,noframenumbering]
+\titlepage
+\end{frame}
+
+
+%% %% \begin{frame}
+%% \tableofcontents[hideallsubsections]
+%% \end{frame}
+%% 
+\begin{frame}
+\end{frame}
+
+\begin{frame}{Roadmap}
+\protect\hypertarget{roadmap}{}
+\begin{itemize}
+\tightlist
+\item
+  Implementation Partners
+\item
+  Being in the Field
+\item
+  Intervention and Evaluation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Data collection methods
+  \end{itemize}
+\item
+  Running the Show
+\end{itemize}
+\end{frame}
+
+\begin{frame}{What is a field experiment?}
+\protect\hypertarget{what-is-a-field-experiment}{}
+\begin{itemize}
+\tightlist
+\item
+  An experiment done outside of a lab, with real people who don't know
+  they are part of an experiment
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Lab: show people video, survey those people
+  \item
+    Field: Show a video in a local theatre; survey people who attended
+  \end{itemize}
+\item
+  Researchers assign and administer experimental intervention
+\end{itemize}
+
+\smallskip
+
+\begin{itemize}
+\tightlist
+\item
+  Different than natural/quasi-experiment where intervention is
+  incidentally random or as-if random
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Implementation Partners}
+\protect\hypertarget{implementation-partners}{}
+How to get involved with implementers
+
+\begin{itemize}
+\item
+  Professor throws you a project
+\item
+  Meet at a conference
+\item
+  Pro bono ``cold call'' from you
+\item
+  University collaborations
+\item
+  Sites that connect researchers and implementers: research4impact,
+  egap, others
+\item
+  Implementers want prior RCT experience, experience in-country
+\item
+  Bigger NGOs will want established professors
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Implementation Partners}
+\protect\hypertarget{implementation-partners-1}{}
+How to work with non-academics
+
+\begin{itemize}
+\tightlist
+\item
+  Theoretical vs.~practical divide
+\item
+  Compromise away from perfection
+\item
+  Avoid jargon
+\item
+  Explain how long data work can take
+\item
+  Expect Googledocs
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Implementation partners}
+\protect\hypertarget{implementation-partners-2}{}
+Priorities and incentives
+
+\begin{itemize}
+\tightlist
+\item
+  Implementing organizations will want you to do a lot of work that is
+  irrelevant for you
+\item
+  Look our for your own interests
+\item
+  Implementers \emph{need} to make themselves look good to maintain
+  grant funding
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Being in the Field}
+\protect\hypertarget{being-in-the-field}{}
+\begin{itemize}
+\tightlist
+\item
+  You need to go
+\item
+  You want to go
+\item
+  Establish personal relationships or you will be in the dark and
+  nothing will get done
+\item
+  Bring gifts that are identifiably \emph{American}
+\end{itemize}
+
+\smallskip
+
+\begin{itemize}
+\tightlist
+\item
+  Implementer priority: show their project is successful, not to
+  evaluate if the project was successful.
+\end{itemize}
+
+\note{
+
+You need to be involved with the intervention, not lead it from afar.
+
+Otherwise you'll find out 6 months later that they did not like the randomization and so didn't use it.  Or that they started the intervention before the baseline survey because they didn't want to wait.  Or that a control site and treatment site are less than 1 mile apart.  Or that they changed the intervention and it's totally different now (NGOs are _always_ adapting).
+
+}
+\end{frame}
+
+\begin{frame}{Being in the Field}
+\protect\hypertarget{being-in-the-field-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Learn the language actively
+\item
+  Learn and follow cultural etiquette
+\item
+  Calm yourself when you want to start an argument
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Being in the Field}
+\protect\hypertarget{being-in-the-field-2}{}
+\begin{itemize}
+\tightlist
+\item
+  Don't bring anything you are afraid to lose
+\item
+  If not staying in a fancy hotel, be ready for lack of
+  water/electricity
+\end{itemize}
+
+\medskip
+
+\begin{itemize}
+\tightlist
+\item
+  Start slow and increase intake of local food each day
+\item
+  Learn what you can and cannot get in-country
+\item
+  Get a local phone and simcard
+\item
+  Get personal wifi connection
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Being in the Field}
+\protect\hypertarget{being-in-the-field-3}{}
+\begin{itemize}
+\tightlist
+\item
+  Learn to get around without help
+\item
+  Find amenities and activities -- gyms, basketball/soccer club, local
+  bars
+\item
+  Travel when possible -- do \textbf{not} watch TV in a hotel room
+\item
+  Hang out with locals
+\item
+  Bring books to read
+\end{itemize}
+
+\medskip
+
+\begin{itemize}
+\tightlist
+\item
+  Enjoy it! Make friends!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interventions and Evaluations}
+\protect\hypertarget{interventions-and-evaluations}{}
+\begin{itemize}
+\tightlist
+\item
+  Don't let the tail wag the dog -- don't change the intervention so
+  that it can be evaluated more easily
+\item
+  Make implementers part of design discussions so it is a \emph{team}
+  design, not \emph{your} design
+\item
+  Be flexible where things are not imperative
+\item
+  Be firm where things are necessary
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interventions and Evaluations}
+\protect\hypertarget{interventions-and-evaluations-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Field experiments are a mess -- multiple things will go wrong
+\item
+  Randomization at multiple levels
+\item
+  Simple designs are more likely to be implemented faithfully; complex
+  designs are beautiful and fragile
+\item
+  Feasibility extends to survey questions and implementation,
+  observational monitoring procedures, everything
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Survey experiments are hard on enumerators because the question
+    wording changes every interview
+  \end{itemize}
+\end{itemize}
+
+\smallskip
+
+\begin{itemize}
+\tightlist
+\item
+  To NGOs, two-arm RCTs are already complicated.\\
+\item
+  Difficult to pitch more complicated things, like multi-arm designs,
+  saturation designs, etc\ldots{}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interventions and Evaluations}
+\protect\hypertarget{interventions-and-evaluations-2}{}
+\begin{itemize}
+\tightlist
+\item
+  Everything is clustered
+\item
+  Everything spills over
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}
+\tightlist
+\item
+  Get the Gerber and Green book.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Data Collection Methods}
+\protect\hypertarget{data-collection-methods}{}
+\begin{itemize}
+\tightlist
+\item
+  Surveys
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In person
+  \item
+    Mobile phone ``IVR'' surveys
+  \end{itemize}
+\item
+  Observational measures
+\item
+  Naturalistic behavioral games
+\item
+  Focus groups and ``Key Informant'' interviews
+\item
+  Others?
+\end{itemize}
+
+\note{
+- Questions in one context make no sense in another context
+- Yes/No + how strongly do you feel > likert scales.
+- Huge agreement bias.
+
+
+Would you be comfortable with someone from the same religion but a different denomination marrying into your family?
+Would you be comfortable with someone from a different religion marrying into your family?
+
+Would you accept someone from a different religion seeking your hand in marriage without converting? - 85% no
+Would you accept someone from a different religion seeking marriage with one of your family members without converting? - 85% no
+
+Would you marry someone you loved, even if they practiced a different religion? - 50% yes, 50% no.
+
+
+There is more than one valid interpretation of religious teachings.
+
+An Arabic word Bid'ah means innovation, connotation heretical teachings.  Innovations -- unorthodox interpretations of Koranic teachings -- are often blamed for violence in NE Nigeria.  So lots of tolerant people said no.
+
+A woman should have a say in how her household spends money.  
+
+}
+\end{frame}
+
+\begin{frame}{Running the Show}
+\protect\hypertarget{running-the-show}{}
+\begin{itemize}
+\tightlist
+\item
+  You are in charge and there is no reset button or second chance
+\item
+  Putting your money into it -- sometimes necessary (get per diem)
+\item
+  Staying up until 3am every night for two weeks
+\item
+  Hard deadlines
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Running the Show}
+\protect\hypertarget{running-the-show-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Lead by example: get sweaty, get cold, get uncomfortable
+\item
+  Don't ask others to do what you will not do
+\item
+  Be SUPER ORGANIZED
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion}
+\protect\hypertarget{conclusion}{}
+\begin{itemize}
+\tightlist
+\item
+  Fieldwork and field experiments are great opportunities for
+  researchers
+\item
+  Working with implementation partners can be difficult but rewarding
+\item
+  Enjoy experiencing another country
+\item
+  Keep your designs simple
+\item
+  Use multiple methods of data collection
+\item
+  Lead by example
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion}
+\protect\hypertarget{conclusion-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Do you really want to do a field experiment/RCT?
+\end{itemize}
+
+\medskip
+
+\begin{itemize}
+\tightlist
+\item
+  Take a lot of time
+\item
+  Require a lot of non-academic work
+\item
+  High fail rate
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
