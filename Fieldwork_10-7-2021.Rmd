@@ -7,11 +7,9 @@ author:
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output:
   beamer_presentation:
-    template: ../utils/bowerstemplate.beamer
     toc: yes
   ioslides_presentation: default
   slidy_presentation: default
-bibliography: ../utils/cdg_references.bib
 ---
 
 ```{r include=FALSE, cache=FALSE, eval=F}
@@ -33,6 +31,19 @@ opts_chunk$set(
 ```
 
 <!--
+Intro to self
+- interrupt me at any time
+- current job
+- fieldwork experiences
+	- pictures?
+
+- before dive into presentation, careful impact evaluation is one way to collaborate with NGOs
+	- not only thing
+	- I am talking about one of the main ways academics work with NGOs.
+	- incentives to evaluate, though different incentives.
+
+
+
 I've done about 18 months of fieldwork since August of 2014 in Ghana, Nigeria, and Malawi.
 
 Ghana: first project, first real overseas travel (did go to Italy a few month's before).  

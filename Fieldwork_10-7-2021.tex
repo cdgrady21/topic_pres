@@ -1,167 +1,103 @@
-\documentclass[11pt,ignorenonframetext,xcolor={svgnames}]{beamer}
-%\setbeameroption{hide notes}
-\usepackage{etex}
-\reserveinserts{28}
-\usepackage{presentation}
-\usepackage{notation}
-\usepackage{caption}
-\usepackage{amssymb,amsmath}
-\usepackage{tikz}
-\usepackage{textpos}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-%\usepackage{lmodern}
-%\usepackage{fontspec,xltxtra,xunicode}
-%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-%\setmainfont{Lato}
-%\setmonofont[Scale=MatchLowercase]{Source Code Pro Light}
-%\let\sfdefault\rmdefault
-\newcommand{\euro}{€}
-\captionsetup{labelformat=empty,labelsep=none,font=small,skip=.25ex} %No "Figure" labels
-\usecolortheme{default}
-\useinnertheme{default}
-\usefonttheme{default}
-%\useoutertheme{progressbar}
-\usepackage{beamerouterthemeprogressbar}
-\progressbaroptions{titlepage=normal,headline=normal,frametitle=normal}
-
-
-% Define Colors
-%% Dark Yellow: 102, 83, 30
-%% Dark Orange: 104, 55, 34
-%% Dark Red: 107, 36, 31
-%% Dark Blue: 19, 64, 80
-%% Dark Green: 0, 86, 79
-%% yellow:  R=242 G=196 B=70 F2C446
-%% orange:  R=249 G=131 B=74 F9834A
-%% blue:  R=46 G=154 B=196   2E9AC4
-%% red:  R=250 G=86 B=70 FA5646
-%% green:  R=3 G=202 B=185 03CAB9
-%% grey:  R=153 G=153 B=153 999999
-%% Dark Yellow: 102, 83, 30
-
-\definecolor{darkyellow}{rgb}{102,83,30}
-\definecolor{orange}{HTML}{F9834A}
-\definecolor{yellow}{HTML}{F2C446}
-\definecolor{blue}{HTML}{2E9AC4}
-\definecolor{darkblue}{rgb}{19,64,80}
-\definecolor{green}{HTML}{03CAB9}
-\definecolor{grey}{HTML}{999999}
-%\definecolor{progressbar@bgblue}{rgb}{0.92, 0.93, 0.95}
-
-%\setbeamerfont*{frametitle}{size=\small,series=\bfseries,bg=white,fg=black}
-%\setbeamerfont*{frametitle}{size=\small,series=\bfseries,bg=white,fg=progressbar@bgblue!90!progressbar@fgblue}
-\setbeamerfont*{note page}{size=\scriptsize}%%footnotesize}
-\setbeamertemplate{note page}[compress]
-\setbeamercovered{transparent}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{items}[circle]
-\setbeamertemplate{sections/subsections in toc}[circle]
-\setbeamersize{description width=2ex}
-% \setbeamersize{text margin left=1ex,text margin right=1ex}
-\setbeamersize{text margin left=2ex,text margin right=1ex}
-%%\setbeamersize{ParSkip 1ex plus 1pt minus 1pt}
-%% %% %% \setbeamertemplate{caption}[numbered]
-\setbeamertemplate{caption label separator}{:}
-\setbeamercolor{title}{fg=blue}
-\setbeamercolor{author}{fg=grey}
-\setbeamercolor{date}{fg=grey}
-\setbeamerfont{author}{shape=\itshape}
-\setbeamercolor{frametitle}{fg=blue}
-\setbeamercolor{caption name}{fg=normal text.fg}
-
-% use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
-\setbeamerfont{quote}{shape=\upshape}
-
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\setcounter{secnumdepth}{0}
-
-
-
-\usepackage{fancyvrb}
-
-
-\usepackage{url}
-
-% Comment these out if you don't want a slide with just the
-% part/section/subsection/subsubsection title:
-%% \AtBeginPart{
-%%   \let\insertpartnumber\relax
-%%     \let\partname\relax
-%%     \frame{\partpage}
-%% }
-
-\AtBeginSection{
-   \let\insertsectionnumber\relax
-      \let\sectionname\relax
-  {
-    \setbeamercolor{background canvas}{bg=blue}
-    %\setbeamercolor{frametitle}{fg=white,bg=darkblue}
-    %\setbeamercolor{normal text}{fg=white,bg=darkblue}
-    %\setbeamercolor{structure}{fg=white}
-       \begin{frame}
-    %\frametitle{\sectionpage}
-    \tableofcontents[currentsection]
-      \end{frame}
-  }
-}
-
-%%% \AtBeginSubsection{
-%%%   \let\insertsubsectionnumber\relax
-%%%     \let\subsectionname\relax
-%%%     \frame{\subsectionpage}
-%%% }
-%%%
-
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-
-\setcounter{secnumdepth}{0}
-
-
-
-
-\title[]{Fieldwork and Field Experiments}
-
-
-\author{
-Chris
-Grady\thanks{\href{mailto:cdgrady21@gmail.com}{\nolinkurl{cdgrady21@gmail.com}},
-Senior Metrics Advisor, United States Agency for International
-Development.} \quad
-}
-
-%%\author{true}
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
 %
-\date{October 04, 2021}
-
-\graphicspath{{.}{../}} 
-
-%% \addtobeamertemplate{frametitle}{}{%
-%% \begin{tikzpicture}[remember picture,overlay]
-%% \node[anchor=south east,yshift=6pt,xshift=-3pt] at (current page.south east) {\includegraphics[height=0.5cm]{SBSTLightBulb}};
-%% \end{tikzpicture}}
-%% 
-%% \addtobeamertemplate{title page}{}{%
-%% \begin{tikzpicture}[remember picture,overlay]
-%% \node[anchor=south east,yshift=5pt] at (current page.south east) {\includegraphics[height=2cm]{SBSTLogo}};
-%% \end{tikzpicture}}
-
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Fieldwork and Field Experiments},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Fieldwork and Field Experiments}
+\author{true}
+\date{October 05, 2021}
 
 \begin{document}
-\begin{frame}[plain,label=intro,noframenumbering]
-\titlepage
+\frame{\titlepage}
+
+\begin{frame}[allowframebreaks]
+  \tableofcontents[hideallsubsections]
 \end{frame}
-
-
-%% %% \begin{frame}
-%% \tableofcontents[hideallsubsections]
-%% \end{frame}
-%% 
 \begin{frame}
 \end{frame}
 
@@ -559,7 +495,5 @@ A woman should have a say in how her household spends money.
   High fail rate
 \end{itemize}
 \end{frame}
-
-
 
 \end{document}
