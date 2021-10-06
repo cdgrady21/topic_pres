@@ -7,11 +7,9 @@ author:
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output:
   beamer_presentation:
-    template: ../utils/bowerstemplate.beamer
     toc: yes
   ioslides_presentation: default
   slidy_presentation: default
-bibliography: ../utils/cdg_references.bib
 ---
 
 ```{r include=FALSE, cache=FALSE, eval=F}
@@ -32,16 +30,6 @@ opts_chunk$set(
   comment=NA)
 ```
 
-<!--
-I've done about 18 months of fieldwork since August of 2014 in Ghana, Nigeria, and Malawi.
-
-Ghana: first project, first real overseas travel (did go to Italy a few month's before).  
-
-Nigeria: two projects.  
-- One evaluating the effects of a Hausa-language TV channel on interethnic/religious tolerance, women's empowerment, youth empowerment.  Around the time Boko Haram was very active, wanted to reduce support for group's like Boko Haram.
-- The other about farmer-pastoralist conflict; farmers and semi-nomadic pastoralists (animal herders) fight over land a lot.  More people, less land, these groups come into conflict a lot in the Sahel and especially in Nigeria.  Evaluating the effect of a big NGO peacebuilding program to reduce conflict.
-
--->
 
 # Roadmap
 
